@@ -1,0 +1,33 @@
+.herobg {
+    background-color: darkgreen;
+    height: 700px;
+}
+
+.maincontainer{
+    background-color: orange;
+}
+
+.maintext{
+    background-color: yellow;
+    height: 650px;
+    
+}
+
+.sidebar {
+    background-color: yellow;
+    height: 650px; 
+}
+
+.footerbg{
+     background-color: yellow;
+    height: 150px;
+}
+
+.leftfoot{
+    background-color:pink;
+}
+
+.rightfoot{
+    
+ background-color: pink;
+}
