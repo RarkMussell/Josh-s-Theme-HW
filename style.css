@@ -1,33 +1,176 @@
+body {
+    background-color: #3f3948;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+}
+
+.navbar {
+    font-size: 0.875em;
+    margin-bottom: 0px;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #ed7d1e;
+}
+
+.navbar-nav li a:hover {
+
+    background-color: transparent;
+}
+
+.navbar-brand {
+    font-size: 2.5em;
+    font-weight: bolder;
+    letter-spacing: -3px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.orange {
+    color: darkorange;
+}
+
+
+
 .herobg {
-    background-color: darkgreen;
     height: 700px;
+    background: url("images/hero.jpg") no-repeat center center;
+    background-size: cover;
+    max-width: 1412px;
 }
 
-.maincontainer{
-    background-color: orange;
+.herobg h1 {
+    font-family: 'Raleway', sans-serif;
+    float: right;
+    /*float the text to the right*/
+    color: white;
+    /*make the text white*/
+    width: 341px;
+    /*Make the text wrap*/
+    font-size: 7.125em;
+    letter-spacing: -10px;
+    font-weight: 800;
+    line-height: 75%;
+    margin-top: 140px;
 }
 
-.maintext{
-    background-color: yellow;
-    height: 650px;
-    
+.maincontainer {
+    background-color: white;
 }
 
-.sidebar {
-    background-color: yellow;
-    height: 650px; 
+.excerpts img {
+    display: block;
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
 }
 
-.footerbg{
-     background-color: yellow;
+.excerpts a {
+    color: #889098;
+    /*need to see the link text*/
+}
+
+
+.maintext h2 {
+    color: darkorange;
+    font-family: raleway, sans-serif;
+    font-size: 1.5em;
+}
+
+.maintext h3 {
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+
+}
+
+
+.sidebar {}
+
+.aside_elements {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.aside_elements h2 {
+    color: darkorange;
+    font-family: raleway, sans-serif;
+    font-size: 1.6em;
+}
+
+
+.footerbg {
     height: 150px;
+    background: url("images/footer.jpg") no-repeat center center;
+    background-size: cover;
+    max-width: 1412px;
 }
 
-.leftfoot{
-    background-color:pink;
+.footerbg p {
+    color: white;
+    margin: 10px;
 }
 
-.rightfoot{
-    
- background-color: pink;
+.leftfoot img {
+    margin: 10px;
+
+}
+
+.rightfoot p {
+    text-align: right;
+}
+
+.rightfoot img {
+    float: right;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+    .leftfoot {
+        width: 50%;
+        /* at 992px make the width of leftfoot 50% of the screen size- Bootstrap  
+                          would normally make this div 100%*/
+        padding-left: 0px;
+        /* remove any Bootstrap padding that mess with our media query*/
+        padding-right: 0px;
+        /* remove any Bootstrap padding that mess with our media 
+                                        query*/
+        float: left;
+        /* make sure the leftfoot div stays on the left*/
+    }
+    .rightfoot {
+        width: 50%;
+        /* at 992px make the width of leftfoot 50% of the screen size- Bootstrap would normally make this div 100%*/
+        */ padding-left: 0px;
+        padding-right: 0px;
+        float: right;
+        /* make sure the leftfoot div stays on the right*/
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .herobg {
+        height: 500px;
+        /* reduce the height and therefore the overall size of the background image*/
+    }
+
+    .herobg h1 {
+        float: none;
+        /* remove the float:right so that the text sits in the middle of the screen*/
+        width: 221px;
+        /* reduce the width of bix the text sits in- this will wrtap our text like the design comp*/
+        font-size: 5.125em;
+        /* reduce the font size*/
+        letter-spacing: -10px;
+        margin-top: 220px;
+        /* push the h1 down away from the top*/
+        line-height: 80%;
+        letter-spacing: -9px;
+    }
 }
